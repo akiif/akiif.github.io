@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d7de3cb2.css",
-    "main.js": "/static/js/main.060505a2.js",
+    "main.js": "/static/js/main.17273163.js",
     "static/media/weather-app.png": "/static/media/weather-app.54c1425b5cb7573720c7.png",
     "static/media/programmingwiki.png": "/static/media/programmingwiki.0681f70b053227f91c28.png",
     "static/media/edunix.png": "/static/media/edunix.0d118c63f203d297f564.png",
@@ -23,10 +23,10 @@
     "static/media/git.svg": "/static/media/git.c08353563539c6459b353f29d8dd7bf2.svg",
     "static/media/vscode.svg": "/static/media/vscode.3e91ebeb866625ec0bf6afdccff4020c.svg",
     "main.d7de3cb2.css.map": "/static/css/main.d7de3cb2.css.map",
-    "main.060505a2.js.map": "/static/js/main.060505a2.js.map"
+    "main.17273163.js.map": "/static/js/main.17273163.js.map"
   },
   "entrypoints": [
     "static/css/main.d7de3cb2.css",
-    "static/js/main.060505a2.js"
+    "static/js/main.17273163.js"
   ]
 }
