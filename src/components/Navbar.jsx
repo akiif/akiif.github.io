@@ -5,6 +5,8 @@ function Navbar() {
     return (
         <nav>
             <Logo />
+            <input type="checkbox" name="" id="nav-check" />
+            <label htmlFor="nav-check" className='nav-check-btn link-hover'><i className="fa-solid fa-bars"></i></label>
             <ul className='nav-ul'>
                 <li className="nav-item">
                     <a href="#about" className="nav-link link-hover">ABOUT</a>

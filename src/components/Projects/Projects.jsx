@@ -3,18 +3,15 @@ import * as ProjectImages from "../../images/projects/projects-images";
 import ProjectList from "./project-list.json";
 
 function Projects() {
-    console.log(ProjectImages);
     return (
         <section className="projects colored-section" id='projects'>
-            <h2 className="title project--main-title">Projects</h2>
+            <h2 className="title project-main-title">Projects</h2>
             <div className="projects-list">
                 {ProjectList.map((project, index) => {
                     let className = ["project-item"];
-                    if ((index + 1) % 2 === 0) {
-                        className.push("projects-right-align");
-                    }
+                    if ((index + 1) % 2 === 0) { className.push("projects-right-align"); }
                     return (
-                        <div className={className.join(" ")} id={project.id}>
+                        <div key={project.id} id={project.id} className={className.join(" ")}>
                             <img src={ProjectImages[project.img]} alt="" className="project-img" />
                             <div className="project-details">
                                 <h3 className="project-title">{project.name}</h3>

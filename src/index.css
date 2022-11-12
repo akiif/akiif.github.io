@@ -100,6 +100,18 @@ nav {
     color: #fff;
 }
 
+#nav-check {
+    display: none;
+}
+
+.nav-check-btn {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Home Section */
+
 .home {
     display: flex;
     justify-content: space-between;
@@ -372,11 +384,11 @@ footer {
 
 /*  Image Hover */
 
-.grow img {
+.grow-img {
     transition: 1s ease;
 }
 
-.grow img:hover {
+.grow-img:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -416,10 +428,65 @@ footer {
     body {
         text-align: center;
     }
+    .nav-check-container {
+        display: inline-block;
+    }
 
     .logo {
         font-size: 1.2rem;
     }
+
+    /* Phone Navbar Section */
+
+    .nav-check-btn {
+        display: block;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-ul {
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 75vh;
+        left: -100%;
+        top: 60px;
+        border-radius: 8px;
+        transition: all .4s;
+    }
+
+    .nav-item {
+        margin: 40px 0px;
+        margin-left: -20px;
+        line-height: 30px;
+        font-size: 1.4rem;
+    }
+
+    .nav-item:first-child {
+        margin-top: 80px;
+    }
+
+    #nav-check:checked {
+        color: #4786e5;
+    }
+
+    #nav-check:checked ~ ul{
+        position: relative;
+        display: flex;
+        left: 0;
+        top: 0;
+        background-color: #40375c;
+    }
+
+    /* nav:has(#nav-check:checked) {
+        background-color: #40375c;
+    } */
+
+    /* Phone Home Section */
 
     .home-section {
         padding: 5% 4% 5%;
@@ -455,16 +522,18 @@ footer {
         height: 209px;
     }
 
+    .title {
+        font-size: 3rem;
+    }
+
+    /* Phone About Section */
+
     .about {
         padding: 2% 14% 8%;
     }
 
     article {
         font-size: 1.2rem;
-    }
-
-    .nav-ul {
-        display: none;
     }
 
     section {
@@ -475,10 +544,18 @@ footer {
         flex-basis: 50%;
     }
 
+    .projects {
+        padding: 0% 12% 8%;
+    }
+
     .project-item {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .project-item + .project-item {
+        margin-top: 70px;
     }
 
     .project-details {
@@ -498,7 +575,7 @@ footer {
         align-self: center;
     }
 
-    .contact-btn {
+    .contact {
         margin-bottom: 20px;
     }
 }

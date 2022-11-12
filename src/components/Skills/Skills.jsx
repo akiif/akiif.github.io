@@ -11,8 +11,8 @@ function Skills() {
             <h3 className="sub-title">Tech Stack 👨‍💻</h3>
             <div className="skills-list">
                 {SkillsList.map((skillItem) => (
-                    <div className="skill-item grow" key={skillItem.id}>
-                        <img className='skill-img' src={SkillsImages[skillItem.img]} alt={skillItem.name} />
+                    <div className="skill-item" key={skillItem.id}>
+                        <img className='skill-img grow-img' src={SkillsImages[skillItem.img]} alt={skillItem.name} />
                         <h3 className="skill-title">{skillItem.name}</h3>
                     </div>
                 ))}
@@ -20,8 +20,8 @@ function Skills() {
             <h3 className="sub-title">Tools ⚙️</h3>
             <div className='skills-list'>
                 {ToolsList.map((toolItem) => (
-                    <div className="skill-item grow" key={toolItem.id}>
-                        <img className='skill-img' src={ToolsImages[toolItem.img]} alt={toolItem.name} />
+                    <div className="skill-item" key={toolItem.id}>
+                        <img className='skill-img grow-img' src={ToolsImages[toolItem.img]} alt={toolItem.name} />
                         <h3 className="skill-title">{toolItem.name}</h3>
                     </div>
                 ))}
